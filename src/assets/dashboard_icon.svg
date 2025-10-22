@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Dashboard Icon</title>
+  <desc>Minimal black dashboard/gauge icon with transparent background</desc>
+
+  <!-- Outer rounded square -->
+  <rect x="32" y="32" width="448" height="448" rx="64" ry="64"
+        fill="none" stroke="#000" stroke-width="32" />
+
+  <!-- Gauge arc -->
+  <path d="M128 320
+           A128 128 0 0 1 384 320"
+        fill="none" stroke="#000" stroke-linecap="round" stroke-width="32" />
+
+  <!-- Needle -->
+  <line x1="256" y1="320" x2="340" y2="260"
+        stroke="#000" stroke-linecap="round" stroke-width="28" />
+  <circle cx="256" cy="320" r="22" fill="#000" />
+
+  <!-- Tick marks -->
+  <g stroke="#000" stroke-width="20" stroke-linecap="round">
+    <line x1="256" y1="192" x2="256" y2="212" />
+    <g transform="rotate(-30 256 320)">
+      <line x1="256" y1="192" x2="256" y2="212" />
+    </g>
+    <g transform="rotate(-60 256 320)">
+      <line x1="256" y1="192" x2="256" y2="212" />
+    </g>
+    <g transform="rotate(30 256 320)">
+      <line x1="256" y1="192" x2="256" y2="212" />
+    </g>
+    <g transform="rotate(60 256 320)">
+      <line x1="256" y1="192" x2="256" y2="212" />
+    </g>
+  </g>
+
+  <!-- Dots -->
+  <circle cx="192" cy="392" r="22" fill="#000" />
+  <circle cx="256" cy="392" r="22" fill="#000" />
+  <circle cx="320" cy="392" r="22" fill="#000" />
+</svg>
